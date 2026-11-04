@@ -310,7 +310,7 @@ button:focus-visible{outline:3px solid rgba(209,30,53,.4);outline-offset:2px}
   });
 
   $('#print').addEventListener('click', function () { if (document.activeElement) document.activeElement.blur(); render(); window.print(); });
-  $('#next').addEventListener('click', function () { s.name = ''; render(); $('[data-k="name"]').focus(); });
+  $('#next').addEventListener('click', function () { if (document.activeElement) document.activeElement.blur(); s.name = ''; render(); $('[data-k="name"]').focus(); });
 
   var box = $('#fitbox'), sheet = $('#sheet');
   var pageRule = document.createElement('style');
