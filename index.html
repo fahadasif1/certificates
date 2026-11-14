@@ -16,6 +16,7 @@ html,body{margin:0;height:100%}
 body{font-family:'Manrope',system-ui,sans-serif;color:var(--ink);background:var(--stage);-webkit-font-smoothing:antialiased}
 .app{display:grid;grid-template-columns:350px minmax(0,1fr);min-height:100%}
 
+.scholarship-promo{margin:0 0 18px;font-size:13px;font-weight:700}.scholarship-promo a{color:var(--red);text-decoration:none}.scholarship-promo a:hover{text-decoration:underline}
 /* Form */
 .form{background:#fff;border-right:1px solid var(--line);padding:22px 22px 28px;height:100vh;overflow:auto;position:sticky;top:0}
 .form h1{font-size:19px;font-weight:700;letter-spacing:-.02em;margin:0 0 3px}
@@ -122,6 +123,7 @@ button:focus-visible{outline:3px solid rgba(209,30,53,.4);outline-offset:2px}
   <form class="form" id="form" autocomplete="off" onsubmit="return false">
     <h1>Scorp <b>Certificates</b></h1>
     <p class="sub">Choose the award, type the name, then print or save as PDF.</p>
+    <p class="scholarship-promo"><a href="./scholarship-cheque.html">Create a 100% Scholarship Cheque →</a></p>
 
     <label><span>Award</span><select id="pick"></select></label>
     <label><span>Colleague's name</span><input class="big" data-k="name" placeholder="Type the name" maxlength="70"></label>
